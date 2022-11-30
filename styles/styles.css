@@ -1,19 +1,79 @@
-li {
-    background-color: yellow;
-    color: darkgreen;
+
+.header {
+  width: 600px;
+  height: 100px;
+  display: block;
+  text-align: center;
+  outline: 1px solid tomato;
+  background-color: teal;
 }
-p {
-    background-color: blueviolet;
+
+.head-list {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-fieldse {
-    background-color: coral;
-    margin-bottom: auto;
-    margin-right: 100px;
-    
+
+.head-link {
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-div {
-    background-color: darkgrey;
+/* 
+.tile-set {
+  position: relative;
 }
-.buttons {
-    color: crimson;
+
+.tile-1 {
+  position: absolute;
+  top: 0;
+  color: blueviolet;
+}
+
+.foot {
+  outline: 1px solid blue;
+  width: 100px;
+  height: 100px;
+  display: block;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  gap: 20px;
+} */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+
+input {
+  padding: 8px;
+  font-family: inherit;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  max-width: 600px;
+}
+
+textarea {
+  max-width: 700px;
+  min-height: 20px;
+  resize: vertical;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+fieldset {
+  display: block;
+  max-width: 600px;
+}
+
+legend {
+  padding-left: 0;
 }

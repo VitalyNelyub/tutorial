@@ -1,70 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Tutorial</title>
-</head>
-<body>
-    <div>
- <!-- main -->
-    <h1>Hello</h1>
-    <h2>Tutorial</h2>
-    <p>Work</p>
-    <ul class="work-fone">
-        <li><a href="https://uk.wikipedia.org/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%96%D1%8F"></a>France</li>
-        <li>Netherland</li>
-        <li>Italy</li>
-    </ul>
-    <fieldset>map</fieldset>
-    <fieldset>code</fieldset>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="head-title list">Web Studio</h1>
+      <div class="header">
+        <ul class="head-list">
+          <li><a class="head-link list" href="google.com"></a>Home</li>
+
+          <li><a class="head-link list" href=""></a>About</li>
+
+          <li><a class="head-link list" href=""></a>Portfolio</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
     </div>
-    <button>Start</button> 
-    <div>
-        <a href="https://uk.wikipedia.org/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%96%D1%8F">France</a>
+
+    <div class="tile-set">
+      <div class="tile-1">to bottom</div>
+      <div class="tile-2">to top</div>
+      <div class="tile-3">to right</div>
+      <div class="tile-4">to top left</div>
     </div>
-    <a href="http://google.com" target="_blank" title="Пошукова система Google">
-  Google.com
-</a>
-<p>
-В лесу родилась елочка <br/>в леу она росла <br/>зимой и летом темною <br/>зеленая была <br/>
-</p>
-  
-<p>Інструкція з експлуатації</p>
-<a href="https://google.com"> target  Посилання на головну сторінку Google</a>
-<p lang="en">Operating instructions
-  
-</p>
-<p lang="fr">Manuel d'utilisation</p>
-  <p lang="">Переваги</p>
-  <li>Працює в браузері</li>
-  <li>Не навантажує систему</li>
-  <li>Зручний інтерфейс</li>
-</ol>
-<a href="https://klike.net/1706-skachat-kartinki-horoshego-kachestva-50-foto.html"></a>
-<img src="https://klike.net/uploads/posts/2019-05/1556708032_1.jpg" alt="zakat" width="400">
-</a>
-<p>
-<a href="https://www.edu.goit.global/uk/learn/5993324/845990/845996">Go IT</a>
-</p>
-<a href="https://www.pexels.com/photo/animals-sweet-cat-kitty-57416/">
-  <img
-    src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?w=640"
-    alt="Рудий кіт"
-    width="640"
-  />
-</a>
-<figure><img src="imeges/imege.jpg" alt="pfp" width="300"><figcaption>photo</figcaption></figure>
-<a href="tel+15546161851">+15546161851</a>
-<p></p>
-<a href=""></a>
-<button><a href="https://google.com" class="buttons">Посилання на головну сторінку Google</a></button>
-<p>
-<a href="tel+380503474748">+38050474748</a>
-</p>
-</body>
+
+    <label class="foot">
+      Weight with 0.1 step value:
+      <input
+        type="number"
+        name="weight"
+        min="0"
+        max="150"
+        step="0.1"
+        value="0"
+      />
+    </label>
+
+    <label class="foot">
+      Height with 0.4 step value:
+      <input
+        type="number"
+        name="height"
+        min="0"
+        max="200"
+        step="0.4"
+        value="0"
+      />
+    </label>
+
+    <form>
+      <label>
+        Phone number
+        <input type="tel" name="phone_number" max="12" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <form>
+      <label>
+        Date
+        <input type="date" min="1920-01-01" max="2020-01-01" />
+      </label>
+
+      <label>
+        Time
+        <input type="time" />
+      </label>
+
+      <label>
+        Date and time
+        <input
+          type="datetime-local"
+          min="1920-01-01T00:00"
+          max="2024-01-01T00:00"
+        />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <form>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="ебани ка почту свою" />
+      </label>
+      <label>
+        Feedback
+        <textarea
+          name="feedback"
+          rows="1"
+          placeholder="Пиши сюда нахуй"
+        ></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+
+   <label for="fav">Choose your favourite browser</label>
+   <input type="radio" name="Phone" id="">
+   <input type="radio" name="Mail" id="">
+   <input type="radio" name="Skyp" id="">
+   <input type="radio" name="Telegram" id="">
+
+   <form>
+  <fieldset>
+    <legend>Enter your contact details</legend>
+    <label>
+      Name
+      <input type="text" name="username" />
+    </label>
+    <label>
+      Email
+      <input type="email" name="email" />
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Your favourite programming language</legend>
+    <label>
+      <input type="checkbox" name="language" value="python">
+      Python
+    </label>
+    <label>
+      <input type="checkbox" name="language" value="js">
+      JavaScript
+    </label>
+    <label>
+      <input type="checkbox" name="language" value="ruby">
+      Ruby
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>I want to receive</legend>
+    <label>
+      <input type="checkbox" name="newsletter" value="weekly">
+      The weekly newsletter
+    </label>
+    <label>
+      <input type="checkbox" name="newsletter" value="company_offers">
+      Offers from the company
+    </label>
+    <label>
+      <input type="checkbox" name="newsletter" value="associated_offers">
+      Offers from associated companies
+    </label>
+  </fieldset>
+
+  <button type="submit">Subscribe</button>
+</form>
+<legend>MMMMMMMM</legend>
+<input type="checkbox" name="NBVGYJK" id="R">
+  </body>
 </html>
